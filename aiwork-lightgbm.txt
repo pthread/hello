@@ -1,0 +1,12 @@
+LightGBM
+========
+git clone https://github.com/Microsoft/LightGBM
+
+brew install gcc --without-multilib
+
+export LD_LIBRARYP_PATH=/usr/local/opt/gcc/bin:$PATH
+export CXX=g++-7 CC=gcc-7
+mkdir build ; cd build
+/Applications/CMake.app/Contents/bin/cmake ..
+make -j4 
+
